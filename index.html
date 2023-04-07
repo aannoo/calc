@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 class="heading">Calculator</h1>
+    <div class="calculator">
+        <div class="left">
+      <div class="display">
+        <input type="text" id="result" disabled>
+      </div>
+      <div class="buttons">
+        <button onclick="clearResult()">C</button>
+        <button onclick="deleteDigit()">DEL</button>
+        <button onclick="operate('/')">&divide;</button>
+        <button onclick="operate('*')">&times;</button>
+        <button onclick="addDigit('7')">7</button>
+        <button onclick="addDigit('8')">8</button>
+        <button onclick="addDigit('9')">9</button>
+        <button onclick="operate('-')">-</button>
+        <button onclick="addDigit('4')">4</button>
+        <button onclick="addDigit('5')">5</button>
+        <button onclick="addDigit('6')">6</button>
+        <button onclick="operate('+')">+</button>
+        <button onclick="addDigit('1')">1</button>
+        <button onclick="addDigit('2')">2</button>
+        <button onclick="addDigit('3')">3</button>
+        <button onclick="equals()">=</button>
+        <button onclick="addDigit('0')">0</button>
+        <button onclick="addDigit('.')">.</button>
+      </div>
+    </div>
+    <div class="right">
+      <div class="history">
+        <ul id="history-list"></ul>
+      </div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
